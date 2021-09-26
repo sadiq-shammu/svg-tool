@@ -1,0 +1,84 @@
+/* download option styles */
+.download-option {
+  position: relative;
+  padding: 12px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #25333d;
+}
+
+.download-option .divider {
+  height: 16px;
+  margin: 0 0 0 8px;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.download-option .save-item {
+  position: relative;
+  margin-left: 8px;
+  padding: 6px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.download-option .save-item:first-child {
+  margin-left: 0;
+}
+
+.download-option .save-item:hover, .download-option .save-item.base64 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.download-option .save-item.base64.copied {
+  background-color: #46bf6b;
+}
+
+.download-option .save-item.svg {
+  background-color: #70a4f2;
+}
+
+.download-option .save-item.png {
+  background-color: #f2a670;
+}
+
+.download-option .save-item.jpg {
+  background-color: #f270a0;
+}
+
+.download-option .save-item.close-editor {
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ff5a79;
+}
+
+.download-option .save-item.close-editor svg {
+  width: 100%;
+  fill: #fff;
+}

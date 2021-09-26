@@ -1,0 +1,65 @@
+/* chip list styles */
+.chip-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  --chipInnerGap: 6px 10px;
+  --chipRadius: 30px;
+  --chipGap: 0 8px 0 0;
+  --chipFontColor: #fff;
+  --chipFontSize: 12px;
+  --chipBg: #24333d29;
+  --chipActiveBg: #273f4e;
+
+  .chip-accordion {
+    position: relative;
+    display: flex;
+
+    &.active svg {
+      transform: rotate(270deg);
+      fill: #24333d61;
+      cursor: n-resize;
+    }
+
+    svg {
+      width: 10px;
+      fill: #24333d;
+      transform: rotate(90deg);
+      transform-origin: center;
+      cursor: s-resize;
+    }
+  }
+}
+
+.chip {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8px;
+
+  .chip-item {
+    position: relative;
+    padding: var(--chipInnerGap);
+    margin: var(--chipGap);
+    font-size: var(--chipFontSize);
+    font-weight: 400;
+    text-transform: capitalize;
+    background-color: var(--chipBg);
+    border-radius: var(--chipRadius);
+    color: var(--chipFontColor);
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      background-color: var(--chipActiveBg);
+      pointer-events: none;
+    }
+  }
+}

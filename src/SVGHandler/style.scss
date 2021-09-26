@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+}
+
+/* handler styles */
+.svg-handler {
+  position: relative;
+
+  * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+}
+
+/* header styles */
+.svg-handler .sh-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  display: flex;
+  padding: 8px 32px;
+  border-bottom: #abb4b9 1px dashed;
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #71a4f1;
+    margin: 0 12px 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 70px;
+    overflow: hidden;
+  }
+
+  .search-filter {
+  }
+
+  .filter-panel {
+    margin-bottom: 8px;
+  }
+
+  .filter-info {
+    margin-left: auto;
+  }
+}
+
+/* card list styles */
+.svg-handler .sh-cards {
+  position: relative;
+  padding: 8px;
+}
+
+/* card list styles */
+.svg-handler .sh-viewer {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  // height: 36vh;
+  height: 300px;
+  background-color: #273f4e;
+  box-shadow: 0px -40px 40px 0px rgba(77, 81, 86, 0.3);
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .download-option {
+    flex: 0 0 100%;
+  }
+
+  .option-nav {
+    flex: 0 0 50%;
+  }
+
+  .editor-nav {
+    flex: 0 0 50%;
+  }
+
+  .code-editor {
+    flex: 0 0 60%;
+    height: calc(100% - 48px);
+  }
+
+  .viewer {
+    flex: 0 0 40%;
+    height: calc(100% - 48px);
+    overflow: auto;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 12px;
+
+    svg {
+      overflow: visible;
+    }
+  }
+}

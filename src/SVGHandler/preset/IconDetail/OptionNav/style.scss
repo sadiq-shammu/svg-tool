@@ -1,0 +1,85 @@
+/* option navigation styles */
+.option-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+
+  .divider {
+    height: 16px;
+    margin: 0 0 0 8px;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .on-item {
+    position: relative;
+    margin-left: 8px;
+    padding: 3px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.color-pic,
+    &.effect {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      padding: 7px;
+      background-color: rgba(0, 0, 0, 0.2);
+
+      svg {
+        width: 100%;
+        fill: #ffffff;
+      }
+
+      &.rotate,
+      &.flip {
+        padding: 5px;
+      }
+
+      &.white {
+        background-color: white;
+        svg {
+          width: 100%;
+          fill: #000000;
+        }
+      }
+
+      &.black {
+        background-color: black;
+        svg {
+          width: 100%;
+          fill: #fff;
+        }
+      }
+
+      &.success {
+        background-color: #35ca69;
+        svg {
+          width: 100%;
+          fill: #fff;
+        }
+      }
+
+      &.error {
+        background-color: #ff5a79;
+        svg {
+          width: 100%;
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

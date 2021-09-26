@@ -1,0 +1,13 @@
+body {
+  background-color: #fbfcfd;
+}
+
+.container {
+  &,
+  * {
+    box-sizing: border-box;
+  }
+  position: relative;
+  max-width: 960px;
+  margin: auto;
+}

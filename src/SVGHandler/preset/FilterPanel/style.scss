@@ -1,0 +1,82 @@
+/* filter panel styles */
+.filter-panel {
+  position: relative;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  --fpInputMaxWidth: 500px;
+  --fpInputHeight: 40px;
+  --fpInputBorderSize: 3px;
+  --fpInputRadius: 40px;
+  --fpInputBorderColor: #273f4e;
+  --fpInputBg: #fff;
+  --fpInputActiveBg: #273f4e;
+  --fpInputFontSize: 14px;
+  --fpInputFontColor: #fff;
+  --fpInputPlaceHolderColor: #24333d29;
+  --fpInputInnerGap: 0 24px;
+  --fpInputIconGap: 16px;
+
+  --fpBorderAsBoxShadow: 0 0 0 var(--fpInputBorderSize)
+    var(--fpInputBorderColor) inset;
+
+  input {
+    position: relative;
+    border: 0;
+    box-shadow: var(--fpBorderAsBoxShadow);
+    border-radius: var(--fpInputRadius);
+    width: var(--fpInputMaxWidth);
+    height: var(--fpInputHeight);
+    padding: var(--fpInputInnerGap);
+    background-color: var(--fpInputBg);
+    font-size: var(--fpInputFontSize);
+    font-weight: 600;
+    color: var(--fpInputFontColor);
+    text-align: left;
+    outline: none;
+
+    &::placeholder {
+      color: var(--fpInputPlaceHolderColor);
+    }
+
+    &.active,
+    &:focus {
+      background-color: var(--fpInputActiveBg);
+    }
+  }
+
+  .fp-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-right: var(--fpInputIconGap);
+    height: max-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    svg {
+      width: 16px;
+      fill: #fff;
+    }
+
+    &.clear {
+      svg {
+        width: 10px;
+      }
+    }
+
+    &.back {
+      right: calc(var(--fpInputIconGap) * 1.5);
+    }
+  }
+}

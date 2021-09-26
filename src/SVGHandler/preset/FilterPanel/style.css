@@ -1,0 +1,105 @@
+/* filter panel styles */
+.filter-panel {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  --fpInputMaxWidth: 500px;
+  --fpInputHeight: 40px;
+  --fpInputBorderSize: 3px;
+  --fpInputRadius: 40px;
+  --fpInputBorderColor: #273f4e;
+  --fpInputBg: #fff;
+  --fpInputActiveBg: #273f4e;
+  --fpInputFontSize: 14px;
+  --fpInputFontColor: #fff;
+  --fpInputPlaceHolderColor: #24333d29;
+  --fpInputInnerGap: 0 24px;
+  --fpInputIconGap: 16px;
+  --fpBorderAsBoxShadow: 0 0 0 var(--fpInputBorderSize)
+    var(--fpInputBorderColor) inset;
+}
+
+.filter-panel * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.filter-panel input {
+  position: relative;
+  border: 0;
+  -webkit-box-shadow: var(--fpBorderAsBoxShadow);
+          box-shadow: var(--fpBorderAsBoxShadow);
+  border-radius: var(--fpInputRadius);
+  width: var(--fpInputMaxWidth);
+  height: var(--fpInputHeight);
+  padding: var(--fpInputInnerGap);
+  background-color: var(--fpInputBg);
+  font-size: var(--fpInputFontSize);
+  font-weight: 600;
+  color: var(--fpInputFontColor);
+  text-align: left;
+  outline: none;
+}
+
+.filter-panel input::-webkit-input-placeholder {
+  color: var(--fpInputPlaceHolderColor);
+}
+
+.filter-panel input:-ms-input-placeholder {
+  color: var(--fpInputPlaceHolderColor);
+}
+
+.filter-panel input::-ms-input-placeholder {
+  color: var(--fpInputPlaceHolderColor);
+}
+
+.filter-panel input::placeholder {
+  color: var(--fpInputPlaceHolderColor);
+}
+
+.filter-panel input.active, .filter-panel input:focus {
+  background-color: var(--fpInputActiveBg);
+}
+
+.filter-panel .fp-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-right: var(--fpInputIconGap);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.filter-panel .fp-icon svg {
+  width: 16px;
+  fill: #fff;
+}
+
+.filter-panel .fp-icon.clear svg {
+  width: 10px;
+}
+
+.filter-panel .fp-icon.back {
+  right: calc(var(--fpInputIconGap) * 1.5);
+}

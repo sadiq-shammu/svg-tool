@@ -1,0 +1,70 @@
+/* download option styles */
+.download-option {
+  position: relative;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #25333d;
+
+  .divider {
+    height: 16px;
+    margin: 0 0 0 8px;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .save-item {
+    position: relative;
+    margin-left: 8px;
+    padding: 6px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover,
+    &.base64 {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &.base64.copied {
+      background-color: #46bf6b;
+    }
+
+    &.svg {
+      background-color: #70a4f2;
+    }
+
+    &.png {
+      background-color: #f2a670;
+    }
+
+    &.jpg {
+      background-color: #f270a0;
+    }
+
+    &.close-editor {
+      padding: 8px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: #ff5a79;
+
+      svg {
+        width: 100%;
+        fill: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "window.zoomLevel": 0,
+  "editor.fontFamily": "'Dank Mono', 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveTimeout": 200,
+
+  "css.validate": false,
+  "scss.validate": false,
+
+  "prettier.semi": false,
+
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "javascript.validate.enable": false,
+  "tslint.jsEnable": false,
+
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    // "**/**.md": true,
+    "**/.prettierrc": true,
+    "**/.gitignore": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.babelrc": true,
+    "**/.editorconfig": true,
+    "**/.eslintrc.json": true,
+    // "**/.nowignore": true,
+    "**/**/style.css": true,
+    "**/**/style.css.map": true,
+
+    "globals.d.ts": false,
+
+    ".nowignore": true,
+    ".babelrc": false,
+
+    "**/.prettierignore/": true,
+    "**/.eslintignore/": true,
+    "**/.tmp/": true,
+
+    "**/yarn.lock": true,
+    "**/yarn-error.log": true,
+    "**/package-lock.json": true,
+    "**/.yarnrc": true
+  },
+
+  "search.exclude": {
+    "**/node_modules": true,
+    ".prettierrc": true,
+
+    "**/*.md": true,
+    "**/**/*.md": true,
+    "**/**/**/*.md": true,
+    "**/.gitignore": true,
+    "**/.next": true,
+    "**/.babelrc": true,
+    "**/.editorconfig": true,
+    "**/.eslintrc.json": true,
+    "**/.nowignore": true,
+    // "**/public": true,
+    "**/dist": true,
+    "**/**/dist": true,
+    "**/*.json": true,
+    "**/*unused/**": true,
+    "**/*snapshots__": true,
+    "**/.vscode": true,
+    "**/__backup.ts": true,
+    "**/__backup.tsx": true
+  },
+
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.gitignore": true,
+    "**/yarn.lock": true,
+    "**/.next": true,
+    "**/.babelrc": true,
+    "**/.editorconfig": true,
+    "**/.eslintrc.json": true,
+    "**/.nowignore": true,
+    "**/**/styles.css": true,
+    "**/__backup.ts": true,
+    "**/__backup.tsx": true,
+    "**/*.md": true
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  }
+}

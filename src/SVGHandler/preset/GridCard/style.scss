@@ -1,0 +1,76 @@
+/* grid card styles */
+.grid-card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  --gcSpan: 10;
+  --gcRadius: 3px;
+  --gcGap: 0px;
+  --gcInnerGap: 12px;
+  --gcShadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  --gcBg: #fff;
+  --gcActiveBg: #273f4e;
+
+  /* card tile styles */
+  .gc-item {
+    flex: 0 0 calc(100% / var(--gcSpan));
+    position: relative;
+    padding: var(--gcInnerGap);
+    background-color: transparent;
+    border-radius: var(--gcRadius);
+    overflow: hidden;
+    cursor: s-resize;
+    margin-bottom: 30px;
+
+    &[search-key="false"] {
+      display: none;
+    }
+
+    &:hover {
+      background-color: var(--gcBg);
+      box-shadow: var(--gcShadow);
+    }
+
+    &.active {
+      background-color: var(--gcActiveBg);
+      box-shadow: var(--gcShadow);
+      pointer-events: none;
+
+      .card {
+        .card-name {
+          color: #fff;
+        }
+
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  .card {
+  }
+
+  @media screen and (max-width: 1023px) {
+    --gcSpan: 8;
+  }
+
+  @media screen and (max-width: 767px) {
+    --gcSpan: 6;
+  }
+
+  @media screen and (max-width: 568px) {
+    --gcSpan: 4;
+  }
+
+  @media screen and (max-width: 365px) {
+    --gcSpan: 2;
+  }
+}

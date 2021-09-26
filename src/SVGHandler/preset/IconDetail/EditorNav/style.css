@@ -1,0 +1,149 @@
+/* editor nav styles */
+.editor-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 24px;
+}
+
+.editor-nav .divider {
+  height: 16px;
+  margin: 0 0 0 8px;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.editor-nav .editor-events {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.editor-nav .editor-name-info {
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.editor-nav .editor-name-info .name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.editor-nav .editor-name-info .font-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.editor-nav .en-item {
+  position: relative;
+  margin-left: 8px;
+  padding: 6px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.editor-nav .en-item:first-child {
+  margin-left: 0;
+}
+
+.editor-nav .en-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.editor-nav .en-item.beautify {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.editor-nav .en-item.beautify.active {
+  background-color: #71a4f1;
+}
+
+.editor-nav .en-item.copy {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.editor-nav .en-item.copy.ac-copy {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.editor-nav .en-item.copy.copied {
+  background-color: #46bf6b;
+}
+
+.editor-nav .en-item svg {
+  width: 16px;
+  fill: #fff;
+}
+
+.editor-nav .en-item.close-editor {
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ff5a79;
+}
+
+.editor-nav .en-item.close-editor svg {
+  width: 100%;
+  fill: #fff;
+}
+
+.editor-nav .en-item.next svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.editor-nav .en-item.next, .editor-nav .en-item.prev {
+  padding: 4px;
+}

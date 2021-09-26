@@ -1,0 +1,100 @@
+/* option navigation styles */
+.option-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 24px;
+}
+
+.option-nav .divider {
+  height: 16px;
+  margin: 0 0 0 8px;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.option-nav .on-item {
+  position: relative;
+  margin-left: 8px;
+  padding: 3px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.option-nav .on-item:first-child {
+  margin-left: 0;
+}
+
+.option-nav .on-item.color-pic, .option-nav .on-item.effect {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 7px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.option-nav .on-item.color-pic svg, .option-nav .on-item.effect svg {
+  width: 100%;
+  fill: #ffffff;
+}
+
+.option-nav .on-item.color-pic.rotate, .option-nav .on-item.color-pic.flip, .option-nav .on-item.effect.rotate, .option-nav .on-item.effect.flip {
+  padding: 5px;
+}
+
+.option-nav .on-item.color-pic.white, .option-nav .on-item.effect.white {
+  background-color: white;
+}
+
+.option-nav .on-item.color-pic.white svg, .option-nav .on-item.effect.white svg {
+  width: 100%;
+  fill: #000000;
+}
+
+.option-nav .on-item.color-pic.black, .option-nav .on-item.effect.black {
+  background-color: black;
+}
+
+.option-nav .on-item.color-pic.black svg, .option-nav .on-item.effect.black svg {
+  width: 100%;
+  fill: #fff;
+}
+
+.option-nav .on-item.color-pic.success, .option-nav .on-item.effect.success {
+  background-color: #35ca69;
+}
+
+.option-nav .on-item.color-pic.success svg, .option-nav .on-item.effect.success svg {
+  width: 100%;
+  fill: #fff;
+}
+
+.option-nav .on-item.color-pic.error, .option-nav .on-item.effect.error {
+  background-color: #ff5a79;
+}
+
+.option-nav .on-item.color-pic.error svg, .option-nav .on-item.effect.error svg {
+  width: 100%;
+  fill: #fff;
+}

@@ -1,0 +1,68 @@
+/* filter info styles */
+.filter-info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.filter-info .fi-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-info .count-info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 12px;
+}
+
+.filter-info .count-info .total-count {
+  position: relative;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1b2932;
+  margin-bottom: 4px;
+}
+
+.filter-info .count-info .small-info {
+  font-size: 12px;
+  font-weight: 400;
+  color: #d1d9de;
+}
+
+.filter-info .show-info-icon {
+  position: relative;
+}
+
+.filter-info .show-info-icon.active svg {
+  fill: #1b2932;
+}
+
+.filter-info .show-info-icon svg {
+  width: 20px;
+  fill: #d1d9de;
+  cursor: pointer;
+}

@@ -1,0 +1,90 @@
+/* grid card styles */
+.grid-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  --gcSpan: 10;
+  --gcRadius: 3px;
+  --gcGap: 0px;
+  --gcInnerGap: 12px;
+  --gcShadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  --gcBg: #fff;
+  --gcActiveBg: #273f4e;
+  /* card tile styles */
+}
+
+.grid-card * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid-card .gc-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / var(--gcSpan));
+          flex: 0 0 calc(100% / var(--gcSpan));
+  position: relative;
+  padding: var(--gcInnerGap);
+  background-color: transparent;
+  border-radius: var(--gcRadius);
+  overflow: hidden;
+  cursor: s-resize;
+  margin-bottom: 30px;
+}
+
+.grid-card .gc-item[search-key="false"] {
+  display: none;
+}
+
+.grid-card .gc-item:hover {
+  background-color: var(--gcBg);
+  -webkit-box-shadow: var(--gcShadow);
+          box-shadow: var(--gcShadow);
+}
+
+.grid-card .gc-item.active {
+  background-color: var(--gcActiveBg);
+  -webkit-box-shadow: var(--gcShadow);
+          box-shadow: var(--gcShadow);
+  pointer-events: none;
+}
+
+.grid-card .gc-item.active .card .card-name {
+  color: #fff;
+}
+
+.grid-card .gc-item.active .card svg {
+  fill: #fff;
+}
+
+@media screen and (max-width: 1023px) {
+  .grid-card {
+    --gcSpan: 8;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grid-card {
+    --gcSpan: 6;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .grid-card {
+    --gcSpan: 4;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .grid-card {
+    --gcSpan: 2;
+  }
+}

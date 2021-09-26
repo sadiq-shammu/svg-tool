@@ -1,0 +1,80 @@
+/* code editor styles */
+.simple-code-editor {
+  position: relative;
+  overflow: auto;
+  max-height: 200px;
+
+  * {
+    font-family: monospace !important;
+  }
+
+  --editorInnerGapX: 12px;
+  --editorInnerGapY: 12px;
+  --editorFontSize: 13px;
+  --editorLineHeight: 12px;
+  --editorFontLineHeight: calc(var(--editorFontSize) + var(--editorLineHeight));
+
+  --editorLineFontColor: rgba(255, 255, 255, 0.5);
+
+  &.dark {
+    --editorFontColor: #fff;
+    --editorLineBg: rgba(0, 0, 0, 0.15);
+    --editorBg: #24333d;
+    --editorBoxBg: #273f4e;
+  }
+
+  &.light {
+    --editorFontColor: #24333d;
+    --editorLineBg: rgba(0, 0, 0, 0.15);
+    --editorBg: #fff;
+    --editorBoxBg: #fff;
+  }
+
+  background-color: var(--editorBg);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .line-number {
+    flex: unset;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: var(--editorFontSize);
+    font-weight: 400;
+    line-height: var(--editorFontLineHeight);
+    color: var(--editorLineFontColor);
+    padding: var(--editorInnerGapY) var(--editorInnerGapX);
+    width: 50px;
+    text-align: right;
+    background-color: var(--editorLineBg);
+  }
+
+  .box {
+    flex: 1;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    background-color: var(--editorBoxBg);
+
+    #simple-editor-box {
+      position: relative;
+      padding: var(--editorInnerGapY) var(--editorInnerGapX);
+      background-color: transparent;
+      font-size: var(--editorFontSize);
+      font-weight: 400;
+      color: var(--editorFontColor);
+      white-space: pre;
+      line-height: var(--editorFontLineHeight);
+      outline: none;
+      min-height: 50px;
+      height: 100%;
+      width: 100%;
+      border: 0;
+      resize: none;
+      overflow: hidden;
+      overflow-x: auto;
+    }
+  }
+}
